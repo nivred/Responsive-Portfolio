@@ -142,7 +142,7 @@ section {
 	background-color: #ffffff;
 	border: 1px solid #cccccc;
 	float: left;
-	margin-right: 40px;
+	margin-right: 5%;
 	margin-bottom: 20px;
 	min-height: 125px;
 	padding: 34px 0 34px 34px;
@@ -171,10 +171,6 @@ section img {
 	box-shadow: 2px 2px 4px 1px #888888;
 }
 
-.project:nth-child(odd) {		/*** WHY DOES ODD AFFECT EVEN AND VISA VERSA ***/
-	margin-left: 40px;
-}
-
 .project a {
 	display: block;
 	padding-bottom: 10px;
@@ -186,7 +182,12 @@ section img {
 	font-weight: 900;
 }
 
-.project #hangman, #rpg, #trivia, #widget, #rps {
+.project:nth-child(odd){
+	margin-left: 5%;
+}
+
+
+#hangman, #rpg, #trivia, #widget, #rps {
 	background-repeat: no-repeat;
 }
 
@@ -315,8 +316,38 @@ footer {
 	section img {
 		height: 385px;
 		margin-bottom: 20px; 
-		width: 91.5%;
+		width: 385px;
 	}
+
+	.project {
+		height: 100%;
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.project {
+		margin-bottom: 40px;
+	}
+
+	.project:nth-child(odd) {
+		margin-left: 0;
+	}
+	
+	#hangman, #rpg, #trivia, #widget, #rps {
+		background-size: contain;
+		background-position: center;
+		height: 91%;
+		width: 91%;
+	}
+
+	input {
+		width: 87%;
+	}
+
+	textarea {
+		width: 87%;
+	}
+
 }
 
 /* BEGIN MEDIA QUERY 768px*/
@@ -331,6 +362,7 @@ footer {
 	}
 
 	section {
+		margin-right: 0;
 	 	width: 94.5%;
 	}
 
@@ -339,17 +371,40 @@ footer {
 	}
 
 	section img {
-		height: 44.5%;
+		height: 50%;
 		margin-bottom: 5px;
 		width: 50%;
 	}
 
+	.project {
+		height: 45%;
+		width: 45%;
+	}
+
+	.project:nth-child(odd){
+		margin-left: 3%;
+	}
+
+	#hangman, #rpg, #trivia, #widget, #rps {
+		background-size: cover;
+		height: 45%;
+		width: 45%;
+	}
+	
 	aside {
-		width: 94.5%;   
+		width: 95%;   
 	}
 
 	h3 {
 		width: 94.5%;
+	}
+
+	input {
+		width: 91%;
+	}
+
+	textarea {
+		width: 91%;
 	}
 }
 
@@ -369,9 +424,8 @@ footer {
 	}
 
 	h1 {
-		padding-left: 0px;
+		float: none;
 		text-align: center;
-		width: 100%;
 	}
 
 	nav {
@@ -387,6 +441,7 @@ footer {
 		float: none;
 
 	}
+
 	section {
 	 	width: 94.5%;
 	}
@@ -399,4 +454,5 @@ footer {
 		margin-bottom: 20px; 
 		width: 92.5%;
 	}
+
 }
