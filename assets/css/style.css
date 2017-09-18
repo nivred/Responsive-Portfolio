@@ -146,7 +146,7 @@ section {
 	margin-right: 40px;
 	margin-bottom: 20px;
 	min-height: 125px;
-	padding: 4.8% 0 4.8% 3.8%;
+	padding: 40px 0 40px 3.5%;
 	width: 612px;	
 }
 
@@ -303,21 +303,22 @@ footer {
 @media screen and (max-width: 980px) {
 
 	.container {
-		max-width: 768px;
+		width: 760px;
 	}
 
 	section {
+    	padding: 4.8% 0 4.8% 3.1%;
 	 	width: 422px;
 	}
 
 	h2 {
-		width: 91.5%;
+		width: 95%;
 	}
 
 	section img {
-		height: 385px;
+		height: 95%;
 		margin-bottom: 20px; 
-		width: 385px;
+		width: 95%;
 	}
 
 	.project {
@@ -356,13 +357,13 @@ footer {
 
 	.container {
 		height: 100%;
-		width: 90%;
-
+		width: 680px;
 	}
 
 	section {
+		padding-left: 4.8%;
 		margin-right: 0;
-	 	width: 96%;
+	 	width: 94.5%;
 	}
 
 	h2 {
@@ -412,6 +413,18 @@ footer {
 
 @media screen and (max-width: 640px) {
 
+	.wrapper {
+		padding-left: 1.5%;
+		padding-right: 1.5%;
+	}
+
+	.wrapper .container {
+		height: 100%;
+		margin-right: 0;
+		padding: 0 10px;
+		width: 100%;
+	}
+
 	header {
 		height: 150px;
 		margin-bottom: 20px;
@@ -427,7 +440,6 @@ footer {
 		text-align: center;
 		padding-left: 0;
 		padding-right: 0;
-		/*width: 100%;*/
 	}
 
 	nav {
@@ -436,24 +448,38 @@ footer {
 		padding: 20px 0;
 		text-align: center;
 	}
+	
+	.wrapper {
+		padding-left: 1.5%;
+		padding-right: 1.5%;
+	}
 
 	.wrapper .container {
 		height: 100%;
+		margin-right: 0;
+		padding: 0 10px;
+		width: 100%;
 	}
 
 	section {
-		padding-left: 7%;
-		width: 93.5%;
+		margin-right: 0;
+		padding-left: 5%;
+		width: 90%;
 	}
 
 	h2 {
-		width: 92.5%;
+		width: 93.5%;
 	}
 
 	section img {
 		height: 92.5%;
-		margin-bottom: 20px; 
-		width: 92.5%;
+		margin-bottom: 20px;
+		margin-right: 0; 
+		width: 93.5%;
+	}
+
+	aside {
+		width: 88%;
 	}
 
 	#hangman, #rpg, #trivia, #widget, #rps {
